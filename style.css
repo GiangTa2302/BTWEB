@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header{
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+
+.header_img img{
+    width: 300px;
+    height: 80px;
+}
+
+.header_img{
+    width: 70%;
+}
+
+.slogan{
+    width: 30%;
+    color: #f30000;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+nav{
+    background-color: #185fb7;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav>ul{
+    display: flex;
+}
+
+nav ul li{
+    padding-left: 10px;
+    list-style-type: none;
+    line-height: 35px;
+}
+nav>ul>li{
+    width: calc(10% - 10px);
+}
+
+nav ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown_content{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    box-shadow:2px 2px #f4f4f4;
+    left: 0;
+}
+
+.dropdown_content li a{
+    color: #185fb7;
+    padding: 20px;
+}
+
+ul>li>a:hover{
+    color: #f30000;
+}
+
+nav>ul li:hover{
+    background-color: #FFCCCC;
+}
+
+.dropdown:hover .dropdown_content,.dropdown:hover>a{
+    display: block;
+    color: #f30000;
+}
+
+section{
+    display: flex;
+}
+
+.products{
+    width: 50%;
+    border: 2px solid #999;
+}
+
+.title{
+    background-color: #185fb7;
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.list_product{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_detail{
+    width: calc(33.33% - 2px);
+    text-align: center;
+    color: #185fb7;
+    font-weight: 600;
+    
+}
+
+.product_img{
+    border: 1px solid #999;
+    margin: 5px 10px;
+}
+
+.product_img img{
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+}
+
+.price_old{
+    color: red;
+    text-decoration: line-through;
+}
+
+.col-2{
+    width: 25%;
+    padding-left: 10px;
+}
+
+.search_product{
+    border: 1px solid #999;
+}
+
+.search_content select, input, button{
+    width: 80%;
+    margin: 10px 0;
+}
+
+.search_content{
+    text-align: center;
+}
+
+.col-3{
+    width: 25%;
+    margin-left: 10px;
+}
+
+.cart{
+    border-radius: 12px;
+    border: 2px solid #fa247f;
+    margin-bottom: 5px;
+}
+
+.title_AD{
+    background-color: #fa247f;
+    color: white;
+    border-radius: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.cart_content{
+    margin: 10px 10px 10px 20px;
+}
+
+.cart_total{
+    display: flex;
+}
+
+.news{
+    border-bottom: 2px solid #fa247f;
+}
